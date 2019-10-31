@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HeroDetailActivity">
+
+    <TextView
+        android:id="@+id/textView_name_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:text="Hero Name"
+        app:layout_constraintBottom_toTopOf="@+id/imageView_image_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView_image_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/textView_descriptionText_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_name_detail"
+        app:srcCompat="@drawable/catman" />
+
+    <TextView
+        android:id="@+id/textView_description_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        app:layout_constraintBottom_toTopOf="@+id/textView_superpowerText_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_descriptionText_detail" />
+
+    <TextView
+        android:id="@+id/textView_superpower_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Superpower"
+        app:layout_constraintBottom_toTopOf="@+id/textView_rankingText_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_superpowerText_detail" />
+
+    <TextView
+        android:id="@+id/textView_ranking_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ranking"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_rankingText_detail" />
+
+    <TextView
+        android:id="@+id/textView_descriptionText_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description:"
+        app:layout_constraintBottom_toTopOf="@+id/textView_description_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_image_detail" />
+
+    <TextView
+        android:id="@+id/textView_superpowerText_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Superpower:"
+        app:layout_constraintBottom_toTopOf="@+id/textView_superpower_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_description_detail" />
+
+    <TextView
+        android:id="@+id/textView_rankingText_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ranking:"
+        app:layout_constraintBottom_toTopOf="@+id/textView_ranking_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_superpower_detail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
