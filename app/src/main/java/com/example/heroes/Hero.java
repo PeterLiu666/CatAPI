@@ -19,6 +19,12 @@ public class Hero
         this.image = image;
     }
 
+    @Override
+    public String toString() {
+        return "No." + ranking + "\n" + name + "\n" + description;
+
+    }
+
     public void setName(String name) {
         this.name = name;
     }

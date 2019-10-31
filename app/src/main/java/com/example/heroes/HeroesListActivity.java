@@ -3,6 +3,8 @@ package com.example.heroes;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -41,7 +43,8 @@ public class HeroesListActivity extends AppCompatActivity
         heroesList = Arrays.asList(heroesArray);
 
         ArrayAdapter<Hero> heroesListAdapter = new ArrayAdapter<Hero>(this, android.R.layout.simple_list_item_1, heroesList);
-        heroesListView = heroesListAdapter;
+        heroesListView.setAdapter(heroesListAdapter);
+
 
 
 
@@ -50,6 +53,19 @@ public class HeroesListActivity extends AppCompatActivity
     {
         heroesListView = findViewById(R.id.ListView_heroesList_list);
     }
+
+    public void setListeners()
+    {
+        heroesListView.setOnItemClickListener(new AdapterView.OnItemClickListener()
+        {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l)
+            {
+
+            }
+        });
+    }
+
 
 
     public String readFile(InputStream inputStream)
