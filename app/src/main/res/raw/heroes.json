@@ -45,29 +45,64 @@
    		"name":"Formatwoman",
 		"description":"A doer of deeds and other documents.",
 		"superpower":"Can complete formats before autocomplete ruins everything.",
-		"ranking":"2",
+		"ranking":"21",
 		"image":"format"
    },
    {
    		"name":"The Aristocrat",
 		"description":"Has 0th world problems.",
 		"superpower":"Can use more resources in a lifetime than a million regular people.",
-		"ranking":"1000000000",
+		"ranking":"1000000",
 		"image":"aristocrat"
    },
    {
    		"name":"The Acrobat",
 		"description":"They have an uncanny sense of balance.",
 		"superpower":"Is unaffected by the feeling of falling and catching yourself when lying down half-asleep",
-		"ranking":"1",
+		"ranking":"2",
 		"image":"sleeping"
    },
 	{
 		"name":"The Diplomat",
 		"description":"Your typical Gen Z teen but with one huge advantage.",
 		"superpower":"When their parents are arguing in a restaurant, The Diplomat does not feel awkward and can divert the server's attention.",
-		"ranking":"17",
+		"ranking":"109",
 		"image":"facepalm"
 
+	},
+	{
+		"name":"The Mosquito",
+		"description":"Most annoying thing ever existed.",
+		"superpower":"Can reproduce and bite as fast as light.",
+		"ranking":"1",
+		"image":"mosquito"
+	},
+	{
+		"name":"Donald Trump",
+		"description":"President, Boeing 757, eats McDonald's, uses golden toilet.",
+		"superpower":"Here comes the money... Here comes the money... Money Money Money Money Money",
+		"ranking":"370000",
+		"image":"trump"
+	},
+	{
+		"name":"Weslie",
+		"description":"The smartest sheep ever existed.",
+		"superpower":"Can run faster than a wolf.",
+		"ranking":"3874",
+		"image":"xiyangyang"
+	},
+	{
+		"name":"Briar",
+		"description":"Clumsy fat bear who always bullies a lumberjack.",
+		"superpower":"Bramble, let's go beat up Logger Vick!",
+		"ranking":"9887",
+		"image":"briar"
+	},
+	{
+		"name":"Francesco Bernoulli",
+		"description":"A superior Italian supercar who got beaten by a random American redneck car.",
+		"superpower":"Vroom... Vroom... FORZA ITALIA!",
+		"ranking":"300",
+		"image":"francescobernoulli"
 	}
 ]
