@@ -3,20 +3,21 @@ package com.example.catapi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.service.carrier.CarrierService;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.Toast;
+import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
+
+import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
-
 public class MainActivity extends AppCompatActivity
 {
     private ImageView catImage;
@@ -41,11 +42,32 @@ public class MainActivity extends AppCompatActivity
 
 
 
-        getCat.setOnClickListener(new View.OnClickListener() {
+        getCat.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view)
             {
-                randomCat(catservice);
+                Call<Cat> catCall = catservice.getRandomCat("search");
+                catCall.enqueue(new Callback<Cat>() {
+                    @Override
+                    public void onResponse(Call<Cat> call, Response<Cat> response)
+                    {
+                        Cat cat = response.body();
+
+                        if(cat != null)
+                        {
+                            Picasso.get().load((cat.getUrl()).into(catImage));
+
+                        }
+
+                    }
+
+                    @Override
+                    public void onFailure(Call<Cat> call, Throwable t)
+                    {
+                        Log.d("ERROR", "WARNING! RESPONSE FAILURE!");
+
+                    }
+                });
 
             }
         });
@@ -58,30 +80,6 @@ public class MainActivity extends AppCompatActivity
         catImage = findViewById(R.id.imageView_main_image);
         getCat = findViewById(R.id.button_main_getcat);
     }
-    private void randomCat(Catservice catservice)
-    {
-        Call<Cat> catCall = catservice.getRandomCat("search");
-        catCall.enqueue(new Callback<Cat>() {
-            @Override
-            public void onResponse(Call<Cat> call, Response<Cat> response)
-            {
-                Cat cat = response.body();
 
-                if(cat != null)
-                {
-                    Picasso.get().load(cat.getUrl()).into(catImage);
 
-                }
-
-            }
-
-            @Override
-            public void onFailure(Call<Cat> call, Throwable t)
-            {
-                Toast.makeText(MainActivity.this, t.getMessage(), Toast.LENGTH_SHORT).show();
-
-            }
-        });
-
-    }
 }
