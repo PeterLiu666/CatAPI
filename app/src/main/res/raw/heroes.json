@@ -59,7 +59,7 @@
    		"name":"The Acrobat",
 		"description":"They have an uncanny sense of balance.",
 		"superpower":"Is unaffected by the feeling of falling and catching yourself when lying down half-asleep",
-		"ranking":"2",
+		"ranking":"4",
 		"image":"sleeping"
    },
 	{
@@ -74,7 +74,7 @@
 		"name":"The Mosquito",
 		"description":"Most annoying thing ever existed.",
 		"superpower":"Can reproduce and bite as fast as light.",
-		"ranking":"1",
+		"ranking":"2",
 		"image":"mosquito"
 	},
 	{
@@ -104,5 +104,12 @@
 		"superpower":"Vroom... Vroom... FORZA ITALIA!",
 		"ranking":"300",
 		"image":"francescobernoulli"
+	},
+	{
+		"name":"Issac",
+		"description":"Chubby Bulgarian who drinks ranch.",
+		"superpower":"Aye Aye Aye Mr.Shoor I finished!!!",
+		"ranking":"1",
+		"image":"issac"
 	}
 ]

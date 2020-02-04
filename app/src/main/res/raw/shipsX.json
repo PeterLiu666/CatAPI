@@ -1,0 +1,100 @@
+[
+  {
+    "name":"Yamato",
+    "nation":"Empire of Japan",
+    "type":"Battleship",
+    "gun": "46 cm/45 Type 94(3 * 3)",
+    "speed":"27 knot",
+    "hp":"97200",
+    "concealment": "18 kilometer",
+    "torpedo": "None",
+    "tier":"X"
+
+  },
+  {
+    "name":"Montana",
+    "nation":"United States of America",
+    "type":"Battleship",
+    "gun":"16-inch/50 caliber Mark 7(4 * 3)",
+    "speed":"30 knot",
+    "hp":"96300",
+    "concealment": "17.82 kilometer",
+    "torpedo": "None",
+    "tier":"X"
+
+  },
+  {
+    "name":"Zao",
+    "nation":"Empire of Japan",
+    "type":"Cruiser",
+    "gun":"203 mm/50 18th Year Type(4 * 3)",
+    "speed":"34.5 knot",
+    "hp":"40800",
+    "concealment": "12.6 kilometer",
+    "torpedo": "610 mm Quintuple(4 * 5)",
+    "tier":"X"
+
+  },
+  {
+    "name":"Des Moines",
+    "nation":"United States of America",
+    "type":"Cruiser",
+    "gun":"203 mm/55 Mk16(3 * 3)",
+    "speed":"33 knot",
+    "hp":"50600",
+    "concealment": "13.86 kilometer",
+    "torpedo": "None",
+    "tier":"X"
+
+  },
+  {
+    "name":"Worcester",
+    "nation":"United States of America",
+    "type":"Cruiser",
+    "gun":"152 mm/47 Mk 16(6 * 2)",
+    "speed":"33 knot",
+    "hp":"45400",
+    "concealment": "12.42 kilometer",
+    "torpedo": "None",
+    "tier":"X"
+
+  },
+  {
+    "name":"Gearing",
+    "nation":"United States of America",
+    "type":"Destroyer",
+    "gun":"127 mm/38 Mk38 mod.0(3 * 2)",
+    "speed":"36 knot",
+    "hp":"19400",
+    "concealment": "7.56 kilometer",
+    "torpedo": "533 mm Mk 15(2 * 5)",
+    "tier":"X"
+
+  },
+  {
+    "name":"Shimakaze",
+    "nation":"Empire of Japan",
+    "type":"Destroyer",
+    "gun":"127 mm/50 3rd Year Type mod.D(3 * 2)",
+    "speed":"39 knot",
+    "hp":"17900",
+    "concealment": "7.11 kilometer",
+    "torpedo": "610 mm Quintuple(3 * 5)",
+    "tier":"X"
+
+  },
+  {
+    "name":"Harugumo",
+    "nation":"Empire of Japan",
+    "type":"Destroyer",
+    "gun":"100 mm/65 Type 98(5 * 2)",
+    "speed":"35.7 knot",
+    "hp":"25600",
+    "concealment": "7.92 kilometer",
+    "torpedo": "610 mm Sextuple(1 * 6)",
+    "tier":"X"
+
+  }
+
+
+]
